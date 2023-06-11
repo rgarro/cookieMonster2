@@ -1,0 +1,2 @@
+<?php
+$dataBasePath = "db.db";
