@@ -1,2 +1,2 @@
 <?php
-$dataBasePath = "db.db";
+$dataBasePath = "db/chinook.db";
