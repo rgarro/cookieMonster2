@@ -8,7 +8,7 @@
  *__________________        ____________________________________________
  *                  |      |dwb
  *
- * Will make a red sabre or maze bulls eyes on boby trap\ativation
+ * Will make a red sabre or maze bulls eyes on boby trap\activation
  * 
  * @author Rolando<rolando@emptyart.xyz>
  */
