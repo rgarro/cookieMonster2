@@ -26,7 +26,7 @@ use PHPUnit\Framework\TestCase;
  *   __)/ / \
  *--"--(_.Ooo'----
  *
- * La Teta De Mondongui, visiones de los tiempos de miguel angel rodriguez
+ * La Teta De Mondongui, visiones de los tiempos de miguel angel rodriguez ...
  * 
  * @author Rolando<rolando@emptyart.xyz>
  */
