@@ -35,7 +35,7 @@ final class MainTest extends TestCase{
     
     protected function setUp():void
     {
-        echo "hepppre";
+        //echo "hepppre";
     }
 
     public function testWeCanTest(): void
@@ -45,7 +45,6 @@ final class MainTest extends TestCase{
 
     public function testDbIsSqlite():void{  
         $db = new MyDB($this->dbpath);
-        echo get_parent_class($db);
         $this->assertTrue(get_parent_class($db)=="SQLite3");
     }
 }
