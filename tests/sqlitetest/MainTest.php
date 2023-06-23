@@ -1,7 +1,6 @@
 <?php declare(strict_types=1);
 use PHPUnit\Framework\TestCase;
 /**
- * Transitioning the 14knots winds
  *         -.--.
  *         )  " '-,
  *         ',' 2  \_
@@ -20,10 +19,9 @@ use PHPUnit\Framework\TestCase;
  *                   '-._     \
  *                       `~---'
  *
- * USPS Visions the darmakaya of ridding a slingshot mixer kiteboard downwinding on a sunny evening ...
- * Test the main model of a future tree of resful responders for swift apps on my iWatch or iPhone
- * anticipate not to lose you twintip after jumps buy a secon hand snowboard and assert true your down hill on snowbird some day
- * alabama spirits leaving magic weed in my kitesurf spot
+ * the fried chiken feathers of a sqlite backend 
+ *  Transitioning the 24knots winds
+ * my foil wing is a mathcad file living in AWS
  * 
  * @author Rolando<rolando@emptyart.xyz>
  */
