@@ -27,15 +27,15 @@ use PHPUnit\Framework\TestCase;
  * 
  * @author Rolando<rolando@emptyart.xyz>
  */
-include_once '../../lib/sqlitetest/MyDB.php';
+include_once '/Users/rolando/Documents/Projects/cookieMonster2/lib/sqlitetest/MyDB.php';
 
 final class MainTest extends TestCase{
 
     private $dbpath = "/Users/rolando/Documents/Projects/cookieMonster2/apps/sqlitetest/db/chinook.db";
     
-    protected function setUp()
+    protected function setUp():void
     {
-        $this->number = 2;
+        echo "hepppre";
     }
 
     public function testWeCanTest(): void
@@ -43,7 +43,9 @@ final class MainTest extends TestCase{
         $this->assertTrue(true);
     }
 
-    public function testDbPdoIsOK():void{ 
-        $this->assertTrue(true); 
+    public function testDbIsSqlite():void{  
+        $db = new MyDB($this->dbpath);
+        echo get_parent_class($db);
+        $this->assertTrue(get_parent_class($db)=="SQLite3");
     }
 }
