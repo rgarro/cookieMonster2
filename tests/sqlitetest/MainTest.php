@@ -27,8 +27,17 @@ use PHPUnit\Framework\TestCase;
  * 
  * @author Rolando<rolando@emptyart.xyz>
  */
-final class MainTest extends TestCase
-{
+include_once '../../lib/sqlitetest/MyDB.php';
+
+final class MainTest extends TestCase{
+
+    private $dbpath = "/Users/rolando/Documents/Projects/cookieMonster2/apps/sqlitetest/db/chinook.db";
+    
+    protected function setUp()
+    {
+        $this->number = 2;
+    }
+
     public function testWeCanTest(): void
     {
         $this->assertTrue(true);
