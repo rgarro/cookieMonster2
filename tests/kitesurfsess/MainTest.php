@@ -28,6 +28,17 @@
  * El no maneja ningún Honda acuran
  *Y la cerveza no le pueden comprar digo todo lo quieres un pasito pa gozaran
  *Porque del baile no la puede sacaran
+ *tu pum pum mami mami no me van matar
+*yo soy branvon digo que bravo no me gana 
+*bravo y malo y digo que no me 
+*por eso escuchan es a cosa que les voy a pronosticar 
+*digo el pum pum digo tiene que pegaran 
+*en Puerto Rico digo tiene que llegaran 
+*Santo Domingo digo tiene que llegaran 
+*en Jamaica digo tiene que azotaran 
+*Costa Rica y en Panaman 
+*toda mi gente se lo van a gozar 
+*tu pum pum mami mami no me van matar 
  * 
  * @author Rolando<rolando@emptyart.xyz>
  */
