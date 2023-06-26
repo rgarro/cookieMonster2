@@ -70,4 +70,12 @@ final class MainTest extends TestCase{
     public function testInsertAKiteIncrementsKitesTableCount(){
 
     }
+
+    public function testKiteModelExist(){
+
+    }
+
+    public function testKiteModelHasOptionListMethod(){
+        
+    }
 }
