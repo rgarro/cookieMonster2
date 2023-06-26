@@ -75,7 +75,11 @@ final class MainTest extends TestCase{
 
     }
 
+    public function testKiteModelExtendsPlumaDeAguilaSqliteParentModel(){
+
+    }
+
     public function testKiteModelHasOptionListMethod(){
-        
+
     }
 }
