@@ -8,14 +8,19 @@
  *     \___________  ___________/
  *               /____\
  * 
- * Yo No soy miembro del partido nazi malparidos
  * Yo soy un Comanche !! Yo soy un Comanche 
- * cara palida mato al delfin de mysql en el tipi de pluma punto
- * oracle es el guano de las estrellas que estan en la cola de procesos
+ * Vendiamos rifles negros en la afueras de Fuerte Walton
+ * 
+ * 
  * 
  * 
  * @author Rolando <rolando@emptyart.xyz>
  */
 abstract class PlumaDeAguilaSqlite {
 
+    protected $tableName = "cajaDeRifles";
+    
+    function __construct() {
+
+    }
 }
