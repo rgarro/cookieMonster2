@@ -79,6 +79,10 @@ final class MainTest extends TestCase{
 
     }
 
+    public function testPlumaDeAguilaChildrenVerifyIfTableExistOnConstruct(){
+        
+    }
+
     public function testKiteModelHasOptionListMethod(){
 
     }

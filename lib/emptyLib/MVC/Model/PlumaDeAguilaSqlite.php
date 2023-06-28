@@ -10,6 +10,7 @@
  * 
  * Yo soy un Comanche !! Yo soy un Comanche 
  * Vendiamos rifles negros en la afueras de Fuerte Walton
+ * day of execution by hanging at noon dia a los 13 violadores de pensacola
  * 
  * 
  * 
@@ -22,5 +23,9 @@ abstract class PlumaDeAguilaSqlite {
     
     function __construct() {
 
+    }
+
+    protected checkIfTableExist(){
+        
     }
 }
