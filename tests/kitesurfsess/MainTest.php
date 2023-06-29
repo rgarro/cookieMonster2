@@ -86,4 +86,16 @@ final class MainTest extends TestCase{
     public function testKiteModelHasOptionListMethod(){
 
     }
+
+    /**Begin Users Assertion */
+
+    public function testUsersModelExist(){
+
+    }
+
+    public function testUsersModelExtendsPlumaDeAguilaSqliteParentModel(){
+
+    }
+
+    /**End Users Assertions */
 }
