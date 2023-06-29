@@ -21,11 +21,11 @@ abstract class PlumaDeAguilaSqlite {
 
     protected $tableName = "cajaDeRifles";
     
-    function __construct() {
+    function construct() {
 
     }
 
-    protected checkIfTableExist(){
+    protected function checkIfTableExist(){
         
     }
 }
