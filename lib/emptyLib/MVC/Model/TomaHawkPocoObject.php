@@ -12,7 +12,7 @@
  * my ancestors visions , gave me this wisdom 
  * The mushroom that squirrels dig like nectar of Amrita
  * started as the urine or feces from poisonus snakes
- * Black Rifle and Crazy Fly ate them and bot graduated from MIT
+ * Black Rifle and Crazy Fly ate them and both graduated from MIT
  *
  * 
  *  
