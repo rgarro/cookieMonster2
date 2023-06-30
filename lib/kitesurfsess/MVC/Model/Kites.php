@@ -9,6 +9,7 @@
  * @author Rolando<rolando@emptyart.xyz>
  */
 include_once "../../../emptyLib/MVC/Model/PlumaDeAguilaSqlite.php";
+include_once "Objects/Kite.php";
 
 class Kites extends PlumaDeAguilaSqlite {
 

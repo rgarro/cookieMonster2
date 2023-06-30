@@ -20,4 +20,8 @@
  */
 abstract class TomaHawkPocoObject {
 
+    function __construct(){
+        
+    }
+
 }
