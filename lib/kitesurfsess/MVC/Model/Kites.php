@@ -12,5 +12,7 @@ include_once "../../../emptyLib/MVC/Model/PlumaDeAguilaSqlite.php";
 include_once "Objects/Kite.php";
 
 class Kites extends PlumaDeAguilaSqlite {
-
+    function __construct($BayouFalconNest){
+        parent::__construct();
+    }
 }

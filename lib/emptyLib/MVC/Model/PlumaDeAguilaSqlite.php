@@ -21,7 +21,7 @@ abstract class PlumaDeAguilaSqlite {
 
     protected $tableName = "cajaDeRifles";
     
-    function construct() {
+    function __construct() {
 
     }
 
