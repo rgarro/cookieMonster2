@@ -20,8 +20,10 @@
 abstract class PlumaDeAguilaSqlite {
 
     protected $tableName = "cajaDeRifles";
+    protected $rowCount = 0;
+    protected $db;
     
-    function __construct() {
+    function __construct($table_name,$db) {
 
     }
 
