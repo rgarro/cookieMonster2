@@ -30,4 +30,6 @@ abstract class PlumaDeAguilaSqlite {
     protected function checkIfTableExist(){
         
     }
+
+    protected function setRowCount(){}
 }
