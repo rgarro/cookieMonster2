@@ -42,7 +42,10 @@
  * 
  * @author Rolando<rolando@emptyart.xyz>
  */
-include_once "/Users/rolando/Documents/Projects/cookieMonster2/lib/kitesurfsess/BayouFalconNest.php";
+
+echo __DIR__;
+
+ include_once "/Users/rolando/Documents/Projects/cookieMonster2/lib/kitesurfsess/BayouFalconNest.php";
 include_once "/Users/rolando/Documents/Projects/cookieMonster2/lib/kitesurfsess/MVC/Model/Kites.php";
 
 final class MainTest extends TestCase{

@@ -8,8 +8,8 @@
  * 
  * @author Rolando<rolando@emptyart.xyz>
  */
-include_once "../../../emptyLib/MVC/Model/PlumaDeAguilaSqlite.php";
-include_once "Objects/Kite.php";
+include_once __DIR__."/../../../emptyLib/MVC/Model/PlumaDeAguilaSqlite.php";
+include_once __DIR__."/Objects/Kite.php";
 
 class Kites extends PlumaDeAguilaSqlite {
     function __construct($BayouFalconNest){
