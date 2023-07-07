@@ -39,7 +39,6 @@ final class MainTest extends TestCase{
     }
 
     public function testDbIsSqlite():void{  
-        //$db = new BayouFalconNest($this->dbpath);
         $this->assertTrue(get_parent_class($this->SqLiteDB)=="SQLite3");
     }
 
