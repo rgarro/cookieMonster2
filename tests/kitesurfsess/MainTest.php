@@ -43,7 +43,10 @@ final class MainTest extends TestCase{
     }
 
     public function testDbHasKitesTable(){
-
+        $sqlString = "SELECT count(*) FROM sqlite_master WHERE type='table' AND name='kites'";
+        $res = $db->querySingle($sqlString);
+        echo $sqlString;
+        print_r($res);
     }
 
     public function testInsertAKiteIncrementsKitesTableCount(){
