@@ -23,7 +23,7 @@ abstract class PlumaDeAguilaSqlite {
     protected $rowCount = 0;
     protected $db;
     
-    function __construct($table_name,$db) {
+    function __construct($db) {
 
     }
 

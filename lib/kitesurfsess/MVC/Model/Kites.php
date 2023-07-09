@@ -12,7 +12,10 @@ include_once __DIR__."/../../../emptyLib/MVC/Model/PlumaDeAguilaSqlite.php";
 include_once __DIR__."/Objects/Kite.php";
 
 class Kites extends PlumaDeAguilaSqlite {
-    function __construct($BayouFalconNest){
-        parent::__construct();
+
+    protected $tableName = "kites";
+
+    function __construct($sqLiteDB){
+        parent::__construct($sqLiteDB);
     }
 }
