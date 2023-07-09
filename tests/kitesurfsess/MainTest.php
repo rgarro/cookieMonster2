@@ -25,7 +25,7 @@ include_once __DIR__."/../../lib/kitesurfsess/MVC/Model/Kites.php";
 
 final class MainTest extends TestCase{
 
-    private $dbpath = "/Users/rolando/Documents/Projects/cookieMonster2/apps/kitesurfSesCounter/db/kitesurfsessdb.db";
+    private $dbpath = "/Users/rolando/Documents/Projects/cookieMonster2/apps/kitesurfSesCounter/db/kitesurfsess.db";
     private $SqLiteDB;
     
     protected function setUp():void
@@ -44,18 +44,18 @@ final class MainTest extends TestCase{
 
     public function testDbHasKitesTable(){
         $sqlString = "SELECT count(*) FROM sqlite_master WHERE type='table' AND name='kites'";
-        $res = $SqLiteDB->querySingle($sqlString);
-        echo $sqlString;
-        print_r($res);
+        $res = $this->SqLiteDB->querySingle($sqlString);
+        $this->assertTrue($res==1);
+    }
+
+    public function testKitesModelExist(){
+        $kiteModel = new Kites()
     }
 
     public function testInsertAKiteIncrementsKitesTableCount(){
 
     }
 
-    public function testKiteModelExist(){
-
-    }
 
     public function testKiteModelExtendsPlumaDeAguilaSqliteParentModel(){
 
