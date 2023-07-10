@@ -49,8 +49,12 @@ final class MainTest extends TestCase{
     }
 
     public function testKitesModelExist(){
-        $kiteModel = new Kites();
-        $this->assertTrue(get_parent_class($kiteModel)=="Kites");
+        $kiteModel = new Kites($this->SqLiteDB);
+        $this->assertTrue(get_class($kiteModel)=="Kites");
+    }
+
+    public function testKitesHasTableCountMethod(){
+
     }
 
     public function testInsertAKiteIncrementsKitesTableCount(){
