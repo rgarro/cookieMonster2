@@ -54,7 +54,8 @@ final class MainTest extends TestCase{
     }
 
     public function testKitesHasTableCountMethod(){
-
+        $kiteModel = new Kites($this->SqLiteDB);
+        $this->assertClassHasAttribute('tableCount',$kiteModel);
     }
 
     public function testInsertAKiteIncrementsKitesTableCount(){
