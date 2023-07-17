@@ -59,7 +59,7 @@ final class MainTest extends TestCase{
         $this->assertTrue(method_exists($kiteModel,'tableCount'));
     }
 
-    public function testInsertAKiteIncrementsKitesTableCount(){
+    public function testSaveAKiteIncrementsKitesTableCount(){
 
     }
 
