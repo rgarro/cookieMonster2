@@ -14,7 +14,10 @@
 *_____ \         ~-+-~                   ___~=_______
  *    ~@#~~ == ...______ __ ___ _--~~--_
  *
- * 
+ * Will jump over White Point, dont fall on the dry
+ * buy a brain case helmet, execute a RESTFUl service after the session
+ * and smoke the safety joint
+ *  
  * 
  * @author Rolando<rolando@emptyart.xyz>
  */
@@ -73,7 +76,8 @@ final class MainTest extends TestCase{
     }
 
     public function testKiteModelHasOptionListMethod(){
-
+        $kiteModel = new Kites($this->SqLiteDB);
+        $this->assertTrue(method_exists($kiteModel,'optionList'));
     }
 
     /**Begin Users Assertion */
