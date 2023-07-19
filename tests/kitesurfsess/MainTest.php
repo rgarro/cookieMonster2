@@ -15,12 +15,12 @@
  *    ~@#~~ == ...______ __ ___ _--~~--_
  *
  * This.is('the story of the spanish main') 
- * The King pardoned henry morgan
+ * The King pardoned henry Morgan
  *  Foiling Back to Cornwall .....
  * Dancing the minuet
- * the slingshot turbine is the black swan
+ * the Slingshot Turbine is the Black Swan
  * this tests are a jewel to margaret
- * 
+ * iWatch Verizon posting downwind RESTFUL dots ......
  * 
  * 
  * @author Rolando<rolando@emptyart.xyz>
@@ -93,7 +93,8 @@ final class MainTest extends TestCase{
     }
 
     public function testUsersModelExtendsPlumaDeAguilaSqliteParentModel(){
-
+        $userModel = new Users($this->SqLiteDB);
+        $this->assertTrue(is_subclass_of($userModel)=="PlumaDeAguilaSqlite");
     }
 
     /**End Users Assertions */
