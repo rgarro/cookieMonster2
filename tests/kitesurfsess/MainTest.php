@@ -14,9 +14,7 @@
 *_____ \         ~-+-~                   ___~=_______
  *    ~@#~~ == ...______ __ ___ _--~~--_
  *
- * Will jump over White Point, dont fall on the dry
- * buy a brain case helmet, execute a RESTFUl service after the session
- * and smoke the safety joint
+ * This.is('the story of the spanish main') 
  *  
  * 
  * @author Rolando<rolando@emptyart.xyz>
