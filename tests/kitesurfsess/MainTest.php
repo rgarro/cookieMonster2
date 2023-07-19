@@ -29,6 +29,7 @@ declare(strict_types=1);
 use PHPUnit\Framework\TestCase;
 include_once __DIR__."/../../lib/kitesurfsess/BayouFalconNest.php";
 include_once __DIR__."/../../lib/kitesurfsess/MVC/Model/Kites.php";
+include_once __DIR__."/../../lib/kitesurfsess/MVC/Model/Users.php";
 
 final class MainTest extends TestCase{
 
@@ -87,7 +88,8 @@ final class MainTest extends TestCase{
     /**Begin Users Assertion */
 
     public function testUsersModelExist(){
-
+        $userModel = new Users($this->SqLiteDB);
+        $this->assertTrue(get_class($userModel)=="Users");
     }
 
     public function testUsersModelExtendsPlumaDeAguilaSqliteParentModel(){
