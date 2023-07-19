@@ -15,7 +15,13 @@
  *    ~@#~~ == ...______ __ ___ _--~~--_
  *
  * This.is('the story of the spanish main') 
- *  
+ * The King pardoned henry morgan
+ *  Foiling Back to Cornwall .....
+ * Dancing the minuet
+ * the slingshot turbine is the black swan
+ * this tests are a jewel to margaret
+ * 
+ * 
  * 
  * @author Rolando<rolando@emptyart.xyz>
  */
