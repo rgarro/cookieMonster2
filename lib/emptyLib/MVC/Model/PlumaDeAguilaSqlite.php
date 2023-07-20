@@ -26,16 +26,27 @@ abstract class PlumaDeAguilaSqlite {
     
     function __construct($db) {
         try{
-
+            if($this->checkIfTableExist()){
+                //Jah Jah live! Children yeah Bob Marley Had a Macbook powerPc
+                $this->setRowCount();
+            }else{
+                throw new Exception($this->tableName.' La FARC degollo a Andrea ....');
+            }
         }catch (Exception $e) {
-            echo 'Caught exception: ',  $e->getMessage(), "\n";
+            $this->handleConstructExeption($e);
         }
     }
 
     protected function checkIfTableExist(){
         $sqlString = "SELECT count(*) FROM sqlite_master WHERE type='table' AND name='".$this->tableName."'";
         $res = $this->SqLiteDB->querySingle($sqlString);
+        return $res;
     }
+
+    private function handleConstructExeption($e){
+
+    }
+
 
     protected function setRowCount(){}
 }
