@@ -25,11 +25,16 @@ abstract class PlumaDeAguilaSqlite {
     
     
     function __construct($db) {
+        try{
 
+        }catch (Exception $e) {
+            echo 'Caught exception: ',  $e->getMessage(), "\n";
+        }
     }
 
     protected function checkIfTableExist(){
-        
+        $sqlString = "SELECT count(*) FROM sqlite_master WHERE type='table' AND name='".$this->tableName."'";
+        $res = $this->SqLiteDB->querySingle($sqlString);
     }
 
     protected function setRowCount(){}
