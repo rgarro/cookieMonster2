@@ -13,6 +13,8 @@ class Kite extends TomaHawkPocoObject{
     protected $name;
     protected $area;
 
+    public $fields = array();
+
     function __construct(){
         parent::__construct();
     }
