@@ -58,4 +58,8 @@ abstract class PlumaDeAguilaSqlite {
         $res = $this->db->querySingle($sqlString);
         return $res;
     }
+
+    public function save(){
+        
+    }
 }
