@@ -18,6 +18,7 @@ final class Validator {
     public function validationBow($fields){
         if($this->fieldIndex < count($fields)){
             $currentField = $fields[$this->fieldIndex];
+            if($currentField['validator']=="str"){}
             
             $this->fieldIndex ++;
             $this->validationBow($fields);
