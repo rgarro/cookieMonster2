@@ -19,7 +19,5 @@ class Kites extends PlumaDeAguilaSqlite {
         parent::__construct($sqLiteDB);
     }
 
-    public function optionList(){
-
-    }
+    
 }

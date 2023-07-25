@@ -11,9 +11,6 @@
  * Yo soy un Comanche !! Yo soy un Comanche 
  * Vendiamos rifles negros en la afueras de Fuerte Walton
  * los 13 violadores de pesacola eran testigos de jeova
- * leian la palabra en retiros de la iglesia y fornicaban las novias de sus hermanos
- * uno de ellos pudo pagar para que le disparan y quedo pataleando en el piso
- *  
  * 
  * 
  * 
@@ -31,7 +28,7 @@ abstract class PlumaDeAguilaSqlite {
         try{
             if($this->checkIfTableExist()){
                 //Jah Jah live! Children yeah Bob Marley Had a Macbook powerPc
-                $this->setRowCount();
+                $this->rowCount = $this->setRowCount();
             }else{
                 throw new Exception($this->tableName.' La FARC degollo a Andrea ....');
             }
@@ -60,6 +57,14 @@ abstract class PlumaDeAguilaSqlite {
     }
 
     public function save(){
-        
+
+    }
+
+    public function optionList($idField="",$labelField=""){
+        $sqlString = "SELECT ".$idField.",".$labelField." FROM ".$this->tableName;
+        $res = $this->db->query($sqlString);
+        /*while ($row = $res->fetchArray()) {
+            var_dump($row);
+        }*/
     }
 }

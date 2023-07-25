@@ -1,7 +1,7 @@
 <?php
 /**
- * too high to wonder why I touched this-> place
- * a iphone recalled your voice
+ * too high to wonder why I touched $this->place
+ * an iphone recalled your voice
  * 
  * 
  * @author Rolando<rolando@emptyart.xyz>
@@ -18,8 +18,21 @@ final class Validator {
     public function validationBow($fields){
         if($this->fieldIndex < count($fields)){
             $currentField = $fields[$this->fieldIndex];
-            if($currentField['validator']=="str"){}
-            if($currentField['validator']=="int"){}
+            //if(=="str"){}
+            //if($currentField['validator']=="int"){}
+            //if($currentField['validator']=="float"){}
+            switch ($currentField['validator']) {
+                case "str":
+                    echo "i equals 0";
+                    break;
+                case "int":
+                    echo "i equals 1";
+                    break;
+                case "float":
+                    echo "i equals 2";
+                    break;
+            }
+            
             $this->fieldIndex ++;
             $this->validationBow($fields);
         }
