@@ -33,8 +33,10 @@ final class Validator {
                     break;
             }
             
-            $this->fieldIndex ++;
+            $this->fieldIndex ++;//sad hill cementery 
             $this->validationBow($fields);
+        }else{
+            return $fields;
         }
     }
 

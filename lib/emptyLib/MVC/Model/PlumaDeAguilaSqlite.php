@@ -66,5 +66,6 @@ abstract class PlumaDeAguilaSqlite {
         /*while ($row = $res->fetchArray()) {
             var_dump($row);
         }*/
+        return $res;
     }
 }

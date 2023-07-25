@@ -17,7 +17,7 @@ class Kite extends TomaHawkPocoObject{
     public $fields = array(
                         "id"=>array('value'=>0,"validator"=>"int"),
                         "name"=>array("value"=>"","validator"=>"str"),
-                        "area"=>array("value"=>0.0,"validator"=>"int")
+                        "area"=>array("value"=>0.0,"validator"=>"float")
                     );
 
     function __construct(){
