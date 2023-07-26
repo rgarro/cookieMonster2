@@ -1,5 +1,26 @@
 <?php
 /**
+ *                _------__--___.__.
+ *                 /            `  `    \
+ *                |                      \
+ *                |                       |
+ *                 \                      |
+ *                   ~/ --`-`-`-\         |
+ *                   |            |       |
+ *                   |            |       |
+ *                    |   _--    |       |
+ * Hey Butthead,      _| =-.    |.-.    |
+ *                    o|/o/       _.   |
+ *does this suck?     /  ~          \ |
+ *                  (____@)  ___~    |
+ *                     |_===~~~.`    |
+ *                  _______.--~     |
+ *                  \________       |
+ *                           \      |
+ *                         __/-___-- -__
+ *                        /            __\
+ *                       /-| Metallica|| |
+ *                      / /|          || |
  * too high to wonder why I touched $this->place
  * an iphone recalled your voice
  * 
