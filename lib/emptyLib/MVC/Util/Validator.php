@@ -1,6 +1,6 @@
 <?php
 /**
- *                _------__--___.__.
+ *                   _------__--___.__.
  *                 /            `  `    \
  *                |                      \
  *                |                       |
@@ -44,7 +44,7 @@ final class Validator {
             //if($currentField['validator']=="float"){}
             switch ($currentField['validator']) {
                 case "str":
-                    echo "i equals 0";
+                    $this->checkIfString($currentField['value'],$minlenght=10,$maxlenght=100);
                     break;
                 case "int":
                     echo "i equals 1";
@@ -52,6 +52,7 @@ final class Validator {
                 case "float":
                     echo "i equals 2";
                     break;
+               
             }
             
             $this->fieldIndex ++;//sad hill cementery 
@@ -61,8 +62,10 @@ final class Validator {
         }
     }
 
-    private function  checkInteger(){
+    private function  checkIfInteger(){
 
     }
+
+    private function checkIfString($str,$minlenght=10,$maxlenght=100){}
 
 }
