@@ -39,9 +39,6 @@ final class Validator {
     public function validationBow($fields){
         if($this->fieldIndex < count($fields)){
             $currentField = $fields[$this->fieldIndex];
-            //if(=="str"){}
-            //if($currentField['validator']=="int"){}
-            //if($currentField['validator']=="float"){}
             switch ($currentField['validator']) {
                 case "str":
                     $this->checkIfString($currentField['value'],$minlenght=10,$maxlenght=100);
@@ -55,7 +52,7 @@ final class Validator {
                
             }
             
-            $this->fieldIndex ++;//sad hill cementery 
+            $this->fieldIndex ++;//Sad Hill cementery 
             $this->validationBow($fields);
         }else{
             return $fields;
@@ -67,5 +64,7 @@ final class Validator {
     }
 
     private function checkIfString($str,$minlenght=10,$maxlenght=100){}
+
+    private function checkIfInt($num,$min,$max){}
 
 }
