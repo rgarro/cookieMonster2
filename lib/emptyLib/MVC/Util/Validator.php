@@ -37,9 +37,8 @@ final class Validator {
     }
 
     /**
-     * my slingshot turburbine will fly along the boca barranca breaking wave
-     * bublegum battle of the coral sea
-     * Mexico city blues along the blue water blvd
+     * my Slingshot Turbine will fly along the Boca Barranca breaking wave ....
+     * looking for a sponsor for my North surfboard
      */
     public function validationBow($fields){
         if($this->fieldIndex < count($fields)){
@@ -54,6 +53,8 @@ final class Validator {
                 case "float":
                     $this->checkIfFloat($num,$min,$max);
                     break;
+                default:
+                    $this->defaultValidation();
                
             }
             
@@ -64,14 +65,24 @@ final class Validator {
         }
     }
 
+    private function defaultValidation(){
+
+    }
+
     private function  checkIfInteger(){
 
     }
 
-    private function checkIfString($str,$minlenght=10,$maxlenght=100){}
+    private function checkIfString($str,$minlenght=10,$maxlenght=256){
 
-    private function checkIfInt($num,$min,$max){}
+    }
 
-    private function checkIfFloat($num,$min,$max){}
+    private function checkIfInt($num,$min,$max){
+
+    }
+
+    private function checkIfFloat($num,$min,$max){
+
+    }
 
 }
