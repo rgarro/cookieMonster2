@@ -36,6 +36,11 @@ final class Validator {
 
     }
 
+    /**
+     * my slingshot turburbine will fly along the boca barranca breaking wave
+     * bublegum battle of the coral sea
+     * Mexico city blues along the blue water blvd
+     */
     public function validationBow($fields){
         if($this->fieldIndex < count($fields)){
             $currentField = $fields[$this->fieldIndex];
@@ -44,10 +49,10 @@ final class Validator {
                     $this->checkIfString($currentField['value'],$minlenght=10,$maxlenght=100);
                     break;
                 case "int":
-                    echo "i equals 1";
+                    $this->checkIfInt($num,$min,$max);
                     break;
                 case "float":
-                    echo "i equals 2";
+                    $this->checkIfFloat($num,$min,$max);
                     break;
                
             }
@@ -66,5 +71,7 @@ final class Validator {
     private function checkIfString($str,$minlenght=10,$maxlenght=100){}
 
     private function checkIfInt($num,$min,$max){}
+
+    private function checkIfFloat($num,$min,$max){}
 
 }
