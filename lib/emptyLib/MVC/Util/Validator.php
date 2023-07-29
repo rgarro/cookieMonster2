@@ -43,21 +43,22 @@ final class Validator {
     public function validationBow($fields){
         if($this->fieldIndex < count($fields)){
             $currentField = $fields[$this->fieldIndex];
+            $err = array();
             switch ($currentField['validator']) {
                 case "str":
-                    $this->checkIfString($currentField['value'],$minlenght=10,$maxlenght=100);
+                    $err = $this->checkIfString($currentField['value'],$minlenght=10,$maxlenght=100);
                     break;
                 case "int":
-                    $this->checkIfInt($num,$min,$max);
+                    $err = $this->checkIfInt($num,$min,$max);
                     break;
                 case "float":
-                    $this->checkIfFloat($num,$min,$max);
+                    $err = $this->checkIfFloat($num,$min,$max);
                     break;
                 default:
                     $this->defaultValidation();
                
             }
-            
+            $fields[$this->fieldIndex]['error'] = $err;
             $this->fieldIndex ++;//Sad Hill cementery 
             $this->validationBow($fields);
         }else{

@@ -56,8 +56,10 @@ abstract class PlumaDeAguilaSqlite {
         return $res;
     }
 
-    public function save(){
-
+    public function save($fields){
+        $val = new Validator();
+        $fi = $val->validationBow($fields);
+        return $fi;
     }
 
     public function optionList($idField="",$labelField=""){
