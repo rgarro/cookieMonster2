@@ -10,8 +10,7 @@
  * 
  * Yo soy un Comanche !! Yo soy un Comanche 
  * Vendiamos rifles negros en la afueras de Fuerte Walton
- * los 13 violadores de pesacola eran testigos de jeova
- * 
+ * los 13 Violadores de Pesacola eran testigos de jeova
  * 
  * 
  * 

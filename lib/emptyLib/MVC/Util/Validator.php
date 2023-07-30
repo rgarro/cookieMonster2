@@ -59,6 +59,7 @@ final class Validator {
                
             }
             $fields[$this->fieldIndex]['error'] = $err;
+            //$fields['has_errors'] = true;
             $this->fieldIndex ++;//Sad Hill cementery 
             $this->validationBow($fields);
         }else{
