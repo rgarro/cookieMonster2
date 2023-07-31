@@ -54,6 +54,9 @@ final class Validator {
                 case "float":
                     $err = $this->checkIfFloat($num,$min,$max);
                     break;
+                case "bool":
+                        $err = $this->checkIfBool($val);
+                        break;    
                 default:
                     $this->defaultValidation();
                
@@ -71,9 +74,6 @@ final class Validator {
 
     }
 
-    private function  checkIfInteger(){
-
-    }
 
     private function checkIfString($str,$minlenght=10,$maxlenght=256){
 
@@ -84,6 +84,10 @@ final class Validator {
     }
 
     private function checkIfFloat($num,$min,$max){
+
+    }
+
+    private function checkIfBool($val){
 
     }
 

@@ -19,5 +19,4 @@ class Kites extends PlumaDeAguilaSqlite {
         parent::__construct($sqLiteDB);
     }
 
-    
 }

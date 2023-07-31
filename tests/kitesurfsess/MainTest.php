@@ -73,7 +73,7 @@ final class MainTest extends TestCase{
 
 
     public function testKiteModelExtendsPlumaDeAguilaSqliteParentModel(){
-
+        $kiteModel = new Kites($this->SqLiteDB);
     }
 
     public function testPlumaDeAguilaChildrenVerifyIfTableExistOnConstruct(){
