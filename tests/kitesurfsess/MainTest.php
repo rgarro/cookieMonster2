@@ -68,7 +68,12 @@ final class MainTest extends TestCase{
     }
 
     public function testSaveAKiteIncrementsKitesTableCount(){
-
+        $kiteModel = new Kites($this->SqLiteDB);
+        $BeforeNum = $kiteModel->tableCount();
+        $newKite = array();//Tome chichi 
+        $kiteModel->save($newKite);
+        $afterNum = $kiteModel->tableCount();
+        $this->assertTrue($BeforeNum < $afterNum);
     }
 
 
