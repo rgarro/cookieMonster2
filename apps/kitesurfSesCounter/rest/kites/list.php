@@ -38,6 +38,10 @@
  * castigados de practicar cienciologia. Yo soy inocente y les fumo mota hasta que se mueran
  * Me voy a ir a vivir a corn island cuando destruyan alderan ...
  * A robby naish lo mato la DIS en los 80, todos los que enceramos carros con cera NAISH sabemos eso
+ * Casi que los de coopana y coopesa saben que la fabrica Naish esta en llobregat
+ * robby naish eran 10 guardias civiles que se fueron de mercenarios a las Falkalnds
+ * La DIS contrato asesinos nepaleses gelugpas y los mataron con todo y sus putas de guerra
+ * Soda estero toco en canal 2 testigo de que costa rica acepta que las Falklands son Britanicas
  * Yo NO soy del partido de somoza, yo NO soy miembro del partido nazi
  * Darth Vader es la otra princesa Leia vestida con ese chasis, le jodieron la pinga a luke
  * Los Star Cruiser los hacian en Tequesquitengo , son un tipo de dirigible que sirve para escapar
@@ -47,6 +51,7 @@
  * Muchos star cruiser atacaron noruega en la segunda guerra mundial que duro 2 meses, el resto fue
  * para manejar poblaciones y reconstruir los tratamientos de aguas negras de europa ....
  * El mandalorian no es mi hijo , el  mandalorian no es mi hijo ...
+ * EL YODA toma CAFE 1820 .....
  * 
  * 
  *
