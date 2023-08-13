@@ -51,6 +51,12 @@
  * Muchos star cruiser atacaron noruega en la segunda guerra mundial que duro 2 meses, el resto fue
  * para manejar poblaciones y reconstruir los tratamientos de aguas negras de europa ....
  * El mandalorian no es mi hijo , el  mandalorian no es mi hijo ...
+ * La isla de Destin Flota a 90 km de altura , la de Sandokan tambien, son asteroides de baja altura
+ * que quedadron ahi en la gran explocion que formo el golfo de mexico,
+ * que cuba ataco con armas termonucleares, en las madrugadas en el sur de Alabama se ve Destin flotando en el aire como un gran lucero
+ * El ejercito mexicano evacuo la microrepublica de Destin con star cruisers, Sandokan perecio quemada, es posible llegar 
+ * a Sandokan en F22 en vuelo vertical en 40 segundos aprovechando el cambio de gravedad, el tiquete vale 25mil dolares
+ * LA VERDADERA CUBA ESTA EN BURATIA ..
  * EL YODA toma CAFE 1820 .....
  * 
  * 
