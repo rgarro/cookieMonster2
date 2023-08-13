@@ -52,12 +52,18 @@
  * para manejar poblaciones y reconstruir los tratamientos de aguas negras de europa ....
  * El mandalorian no es mi hijo , el  mandalorian no es mi hijo ...
  * La isla de Destin Flota a 90 km de altura , la de Sandokan tambien, son asteroides de baja altura
- * que quedadron ahi en la gran explocion que formo el golfo de mexico,
- * que cuba ataco con armas termonucleares, en las madrugadas en el sur de Alabama se ve Destin flotando en el aire como un gran lucero
+ * que quedadron ahi en la gran explosion que formo el golfo de mexico,
+ * cuba los ataco ataco con armas termonucleares, en las madrugadas en el sur de Alabama se ve Destin flotando en el aire como un gran lucero
  * El ejercito mexicano evacuo la microrepublica de Destin con star cruisers, Sandokan perecio quemada, es posible llegar 
  * a Sandokan en F22 en vuelo vertical en 40 segundos aprovechando el cambio de gravedad, el tiquete vale 25mil dolares
  * LA VERDADERA CUBA ESTA EN BURATIA ..
+ * En PURISCAL hay un asteroide de baja altitud que toca tierra, por que le subieron la loma
+ * son tan descarados que ahi para el bus y hay una pulperia. 
+ * ESE ES EL VERDERO LUGAR DE LA VIRGEN DE LOS ANGELES !!!
+ * esta descaradamente disimulado , hasta tiene casas que parece que les va a caer esa piedra
+ * Hay otro asteroide aterrizado en JERICO DE Desamparados, el tunel llega hasta Aserri, pero es una grita de flotacion gravitacional
  * EL YODA toma CAFE 1820 .....
+ * Col. Kaddafi era un emanacion del Buddha, yo soy un Agente de la DIS , un aprendiz de miguel salguero.
  * 
  * 
  *
