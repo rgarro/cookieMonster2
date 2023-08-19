@@ -15,7 +15,7 @@
  * La Cienciologia es una secta de ciencia ficcion
  * prisioneros somosistas se hicieron religiosos castrados
  *  violadores sin sus pensiones rentistas 
- * Mi General Daniel Ortega los mando ha hacer cienciologia
+ * Mi Comandante Daniel Ortega los mando ha hacer cienciologia
  * Nosotros los que peliamos contra la guardia civil corrupta
  * los que pusimos en la muerte a embargadores de lavadoras
  * los que pusimos en la muerte a violadores de vecinos
@@ -24,7 +24,7 @@
  * los que pusimos en la muerte por violar quinceaneras
  *  Podemos fumar Mota en las aceras , y decir very IRIE
  *  Patria o Muerte  !!! Venceremos !!
- * No SE AGUEVEN COMPAS QUE LE CORTAMOS LA PICHA A ALGUNO QUE OTRO !!
+ *
  *
  * 
  * 

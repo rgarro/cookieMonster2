@@ -58,7 +58,7 @@ abstract class PlumaDeAguilaSqlite {
     public function save($fields){
         $val = new Validator();
         $fi = $val->validationBow($fields);
-        if()
+        //if()
         return $fi;
     }
 

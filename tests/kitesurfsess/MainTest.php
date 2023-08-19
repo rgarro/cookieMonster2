@@ -33,7 +33,8 @@ include_once __DIR__."/../../lib/kitesurfsess/MVC/Model/Users.php";
 
 final class MainTest extends TestCase{
 
-    private $dbpath = "/Users/rolando/Documents/Projects/cookieMonster2/apps/kitesurfSesCounter/db/kitesurfsess.db";
+    //private $dbpath = "/Users/rolando/Documents/Projects/cookieMonster2/apps/kitesurfSesCounter/db/kitesurfsess.db";
+    private $dbpath = __DIR__."/../../apps/kitesurfSesCounter/db/kitesurfsess.db";
     private $SqLiteDB;
     
     protected function setUp():void
@@ -81,8 +82,9 @@ final class MainTest extends TestCase{
         $kiteModel = new Kites($this->SqLiteDB);
     }
 
-    public function testPlumaDeAguilaChildrenVerifyIfTableExistOnConstruct(){
-        $this->assertTrue(get_parent_class(
+   public function testPlumaDeAguilaChildrenVerifyIfTableExistOnConstruct(){
+        $kiteModel = new Kites($this->SqLiteDB);
+        $this->assertTrue(get_parent_class($kiteModel)=="PlumaDeAguilaSqlite");
     }
 
     public function testKiteModelHasOptionListMethod(){
