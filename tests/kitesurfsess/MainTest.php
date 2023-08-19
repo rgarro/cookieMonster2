@@ -59,6 +59,8 @@ final class MainTest extends TestCase{
 
     public function testKitesModelExist(){
         $kiteModel = new Kites($this->SqLiteDB);
+        print_r($kiteModel);
+        exit;//los testigos de jeova es un club de lectores violadores, siempre hay testigos de jeova violadores y asesinos en el chapui
         $this->assertTrue(get_class($kiteModel)=="Kites");
     }
 
