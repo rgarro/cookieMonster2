@@ -15,9 +15,7 @@ class Kites extends PlumaDeAguilaSqlite {
 
     protected $tableName = "kites";
 
-    function __construct($sqLiteDB){
-        print_r($sqLiteDB);
-        exit;
+    function __construct($sqLiteDB){       
         parent::__construct($sqLiteDB);
     }
 
