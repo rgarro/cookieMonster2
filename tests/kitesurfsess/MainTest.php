@@ -33,8 +33,8 @@ include_once __DIR__."/../../lib/kitesurfsess/MVC/Model/Users.php";
 
 final class MainTest extends TestCase{
 
-    //private $dbpath = "/Users/rolando/Documents/Projects/cookieMonster2/apps/kitesurfSesCounter/db/kitesurfsess.db";
-    private $dbpath = __DIR__."/../../apps/kitesurfSesCounter/db/kitesurfsess.db";
+    private $dbpath = "/Users/rolando/Documents/Projects/cookieMonster2/apps/kitesurfSesCounter/db/kitesurfsess.db";
+    //private $dbpath = __DIR__."/../../apps/kitesurfSesCounter/db/kitesurfsess.db";
     private $SqLiteDB;
     
     protected function setUp():void
@@ -58,9 +58,12 @@ final class MainTest extends TestCase{
     }
 
     public function testKitesModelExist(){
+        echo "4321 testing";
         $kiteModel = new Kites($this->SqLiteDB);
         print_r($kiteModel);
-        exit;//los testigos de jeova es un club de lectores violadores, siempre hay testigos de jeova violadores y asesinos en el chapui
+        echo "1234 testing";
+        exit;
+        //exit;//los testigos de jeova es un club de lectores violadores, siempre hay testigos de jeova violadores y asesinos en el chapui
         $this->assertTrue(get_class($kiteModel)=="Kites");
     }
 
