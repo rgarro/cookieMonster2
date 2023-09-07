@@ -23,12 +23,9 @@ abstract class PlumaDeAguilaSqlite {
     protected $db;
     
     
-    function __construct($db) {
-
-echo "sadfasdfaf";        
-print_r($db);
-exit;        
+    function __construct($db) {   
         try{
+            $this->setDB($db);
             if($this->checkIfTableExist()){
                 //Jah Jah live! Children yeah Bob Marley Had a Macbook powerPc
                 $this->rowCount = $this->setRowCount();
@@ -40,9 +37,17 @@ exit;
         }
     }
 
+    protected function setDB($db){
+        if(get_parent_class($db)=="SQLite3"){
+           $this->db == $db;
+        }else{
+            throw new Exception($this->tableName.' must be a Sqlite3 child');
+        }
+    }
+
     protected function checkIfTableExist(){
-        $sqlString = "SELECT count(*) FROM sqlite_master WHERE type='table' AND name='".$this->tableName."'";
-        $res = $this->db->querySingle($sqlString);
+        $sqlString = "SELECT count(*) FROM sqlite_master WHERE type='table' AND name='".$this->tableName."'";     
+        $res = $this->db->querySingle($sqlString);      
         return $res;
     }
 

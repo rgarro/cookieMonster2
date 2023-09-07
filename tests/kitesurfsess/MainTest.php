@@ -58,8 +58,7 @@ final class MainTest extends TestCase{
     }
 
     public function testKitesModelExist(){
-        echo "4321 XXXXXX";
-        $kiteModel = new Kites($this->SqLiteDB);
+        $kiteModel = new Kites($this->SqLiteDB);//los testigos de jehova es una religion gay
         //print_r($kiteModel);
         ///echo "1234 testing";
         //exit;
