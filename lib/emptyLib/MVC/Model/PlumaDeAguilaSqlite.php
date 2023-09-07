@@ -24,6 +24,10 @@ abstract class PlumaDeAguilaSqlite {
     
     
     function __construct($db) {
+
+echo "sadfasdfaf";        
+print_r($db);
+exit;        
         try{
             if($this->checkIfTableExist()){
                 //Jah Jah live! Children yeah Bob Marley Had a Macbook powerPc
