@@ -23,9 +23,9 @@ abstract class PlumaDeAguilaSqlite {
     protected $db;
     
     
-    function __construct($db) {   
+    function __construct($dbo) {   
         try{
-            $this->setDB($db);
+            $this->setDB($dbo);
             if($this->checkIfTableExist()){
                 //Jah Jah live! Children yeah Bob Marley Had a Macbook powerPc
                 $this->rowCount = $this->setRowCount();
@@ -37,11 +37,11 @@ abstract class PlumaDeAguilaSqlite {
         }
     }
 
-    protected function setDB($db){
+    protected function setDB($dbo){
         if(get_parent_class($db)=="SQLite3"){
-           $this->db == $db;
+           $this->db = $dbo;
         }else{
-            throw new Exception($this->tableName.' must be a Sqlite3 child');
+            throw new Exception('param is '.get_class($dbo).' instance must be a Sqlite3 child');
         }
     }
 
@@ -53,7 +53,8 @@ abstract class PlumaDeAguilaSqlite {
 
     private function handleConstructExeption($e){
         //los testigos de jeova son religion de mentira
-        print_r($e);
+        //print_r($e);//la cienciologia es una secta de ciencia ficcion
+        // me limpie el culo con una biblia de los testigos de jeova...
         return false;
     }
 
