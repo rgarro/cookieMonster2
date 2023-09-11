@@ -61,7 +61,7 @@ abstract class PlumaDeAguilaSqlite {
 
     protected $tableName = "cajaDeRifles";
     protected $rowCount = 0;
-    protected $db;
+    public $db;
     
     
     function __construct($dbo) {   
@@ -82,7 +82,7 @@ abstract class PlumaDeAguilaSqlite {
         if(get_parent_class($db)=="SQLite3"){
            $this->db = $dbo;
         }else{
-            throw new Exception('param is '.get_class($dbo).' instance must be a Sqlite3 child');
+            throw new Exception('param is dbo instance must be a Sqlite3 child');
         }
     }
 
@@ -97,8 +97,10 @@ abstract class PlumaDeAguilaSqlite {
     }
 
 
-    protected function setRowCount(){
+    public function setRowCount(){
         $sqlString = "SELECT count(*) FROM ".$this->tableName;
+ var_dump($this->db);
+ exit;       
         $res = $this->db->querySingle($sqlString);
         return $res;
     }
@@ -119,9 +121,4 @@ abstract class PlumaDeAguilaSqlite {
         return $res;
     }
 
-    public function tableCount(){
-        $sqlString = "SELECT COUNT(*) FROM ".$this->tableName;
-        $res = $this->db->query($sqlString);
-        return $res;
-    }
 }
