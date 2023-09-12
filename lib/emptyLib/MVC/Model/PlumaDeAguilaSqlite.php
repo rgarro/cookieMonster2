@@ -71,6 +71,7 @@ abstract class PlumaDeAguilaSqlite {
             $this->setDB($dbo);
             if($this->checkIfTableExist()){
                 //Jah Jah live! Children yeah Bob Marley Had a Macbook powerPc
+                //Dirlewanger era el verdadero Bob Marley que compuso todas las canciones
                 $this->rowCount = $this->setRowCount();
             }else{
                 throw new Exception($this->tableName.' La FARC degollo a Andrea ....');
@@ -102,8 +103,6 @@ abstract class PlumaDeAguilaSqlite {
     public function setRowCount(){
         $sqlString = "SELECT count(*) FROM ".$this->tableName;       
         $res = $this->db->querySingle($sqlString);
-//var_dump($res);
- //exit;
         return $res;
     }
 

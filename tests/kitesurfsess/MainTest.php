@@ -65,12 +65,10 @@ final class MainTest extends TestCase{
 
     public function testSaveAKiteIncrementsKitesTableCount(){
         $this->SqLiteDB = new BayouFalconNest($this->dbpath);
-        $kiteModel = new Kites($this->SqLiteDB);
-        //var_dump($kiteModel);//testigos de jehova es una religion homosexual       
-        $BeforeNum = $kiteModel->setRowCount();//jeova cagaba en telaviv leilan los hermanos en la entrada del chapui
-        // testigos de jeova de somoza, los macheteron con lanzas del ejercito de chile en abangares por violar y matar en chomes
-       /* $newKite = array();
-        $kiteModel->save($newKite);
+        $kiteModel = new Kites($this->SqLiteDB);     
+        $BeforeNum = $kiteModel->setRowCount();
+        $newKite = array();
+        /*$kiteModel->save($newKite);
         $afterNum = $kiteModel->setRowCount();
         $this->assertTrue($BeforeNum < $afterNum);*/
     }
