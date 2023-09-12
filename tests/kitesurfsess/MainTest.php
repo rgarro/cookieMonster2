@@ -67,9 +67,10 @@ final class MainTest extends TestCase{
         $this->SqLiteDB = new BayouFalconNest($this->dbpath);
         $kiteModel = new Kites($this->SqLiteDB);     
         $BeforeNum = $kiteModel->setRowCount();
-        $newKite = array();
-        /*$kiteModel->save($newKite);
-        $afterNum = $kiteModel->setRowCount();
+        //$newKite = array("id"=>1,"name"=>"test duotone","area"=>9);
+        $newKite = array("name"=>"test duotone","area"=>9);
+        $kiteModel->save($newKite);
+        /*$afterNum = $kiteModel->setRowCount();
         $this->assertTrue($BeforeNum < $afterNum);*/
     }
 

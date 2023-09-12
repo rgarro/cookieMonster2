@@ -70,8 +70,13 @@ abstract class PlumaDeAguilaSqlite {
             //$this->path = $dbo;
             $this->setDB($dbo);
             if($this->checkIfTableExist()){
-                //Jah Jah live! Children yeah Bob Marley Had a Macbook powerPc
-                //Dirlewanger era el verdadero Bob Marley que compuso todas las canciones
+                //Jah Jah live! Children yeah ,Dirlewanger the real Bob Marley Had a Macbook powerPc in 1945
+                //surfers like bob marley, cantabrian sailors train surf before becoming cornwaleses since the times of rome
+                //Jah Jah live sounds like german ....
+                //A t-26 with spanish flag , red gold and green
+                //Dirlewanger shoot the sheriff and stab all the deputies
+                //Waiting in Vain is a song about military police shooting female desertors
+                //Yo me cago en el dios de los testigos de jehova, que son la mierda de este mundo  ..
                 $this->rowCount = $this->setRowCount();
             }else{
                 throw new Exception($this->tableName.' La FARC degollo a Andrea ....');
