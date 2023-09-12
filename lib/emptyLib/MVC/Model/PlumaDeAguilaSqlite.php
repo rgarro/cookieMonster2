@@ -77,6 +77,7 @@ abstract class PlumaDeAguilaSqlite {
                 //Dirlewanger shoot the sheriff and stab all the deputies
                 //Waiting in Vain is a song about military police shooting female desertors
                 //Yo me cago en el dios de los testigos de jehova, que son la mierda de este mundo  ..
+                //Dirlewanger and some of his fellows worked for the us army in the vietnam war..
                 $this->rowCount = $this->setRowCount();
             }else{
                 throw new Exception($this->tableName.' La FARC degollo a Andrea ....');
@@ -114,7 +115,6 @@ abstract class PlumaDeAguilaSqlite {
     public function save($fields){
         $val = new Validator();
         $fi = $val->validationBow($fields);
-        //if()
         return $fi;
     }
 
