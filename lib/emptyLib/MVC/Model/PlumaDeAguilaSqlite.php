@@ -48,8 +48,8 @@
  *- ~~ ~~~ ~~~~ ~~~~ ~~~~ ~~~~  ~~~~~~~~(~~~~~~|~~~~ ~~~~
  *~~ ~~ ~~ ~~~ ~~~~ ~~~~ ~~~ ~~~ ~~~~~~~ ~~~~~~~~~~~~~~~~
  *
- * Comanche !! Comanche  !! 
- * We were selling Black rifles in the Fuerte Walton outskirts
+ * Comanche !! Comanche  !!  Comanche  !! 
+ * We were selling Black rifles in the Fort Walton outskirts
  * the 13 rapists from Pesacola get hanged at noon
  * they all were jahova witness
  *
@@ -61,11 +61,13 @@ abstract class PlumaDeAguilaSqlite {
 
     protected $tableName = "cajaDeRifles";
     protected $rowCount = 0;
-    public $db;
+    protected $db;
+    //public $path;
     
     
     function __construct($dbo) {   
         try{
+            //$this->path = $dbo;
             $this->setDB($dbo);
             if($this->checkIfTableExist()){
                 //Jah Jah live! Children yeah Bob Marley Had a Macbook powerPc
@@ -79,7 +81,7 @@ abstract class PlumaDeAguilaSqlite {
     }
 
     protected function setDB($dbo){
-        if(get_parent_class($db)=="SQLite3"){
+        if(get_parent_class($dbo)=="SQLite3"){
            $this->db = $dbo;
         }else{
             throw new Exception('param is dbo instance must be a Sqlite3 child');
@@ -98,10 +100,10 @@ abstract class PlumaDeAguilaSqlite {
 
 
     public function setRowCount(){
-        $sqlString = "SELECT count(*) FROM ".$this->tableName;
- var_dump($this->db);
- exit;       
+        $sqlString = "SELECT count(*) FROM ".$this->tableName;       
         $res = $this->db->querySingle($sqlString);
+//var_dump($res);
+ //exit;
         return $res;
     }
 

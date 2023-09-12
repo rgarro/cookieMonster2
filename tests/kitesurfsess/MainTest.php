@@ -1,27 +1,21 @@
 <?php
 /**
- *                  _..--+~/@-~--.
- *            _-=~      (  .     "}  
- *         _-~     _.--=.\   \""""
- *       _~      _-       \ \_\
- *      =      _=          '--'
- *     '      =                             .
- *    :      :       ____                   '=_. ___
-*___  |      ;                            ____ '~--.~.
- *    ;      ;                               _____  } |
- * ___=       \ ___ __     __..-...__           ___/__/__
- *    :        =_     _.-~~          ~~--.__
-*_____ \         ~-+-~                   ___~=_______
- *    ~@#~~ == ...______ __ ___ _--~~--_
+ *              |    |    |                 
+ *             )_)  )_)  )_)              
+ *            )___))___))___)\            
+ *           )____)____)_____)\\
+ *         _____|____|____|____\\\__
+ *---------\                   /---------
+ *  ^^^^^ ^^^^^^^^^^^^^^^^^^^^^
+ *    ^^^^      ^^^^     ^^^    ^^
+ *         ^^^^      ^^^
  *
- * This.is('the story of the spanish main') 
- * The King pardoned henry Morgan
- *  Foiling Back to Cornwall .....
- * Dancing the minuet
- * the Slingshot Turbine is the Black Swan
- * this tests are a jewel to margaret
- * iWatch Verizon posting downwind RESTFUL dots ......
- * 
+ * This.is('The Story of the Spanish Main') 
+ * The King has pardoned Henry Morgan
+ *  Foiling Back to Cornwall ......
+ * class Micro_Minuet{
+ *  long Jhon = S(i)L;//ver.02
+ * }
  * 
  * @author Rolando<rolando@emptyart.xyz>
  */
@@ -72,8 +66,9 @@ final class MainTest extends TestCase{
     public function testSaveAKiteIncrementsKitesTableCount(){
         $this->SqLiteDB = new BayouFalconNest($this->dbpath);
         $kiteModel = new Kites($this->SqLiteDB);
-        var_dump($kiteModel);//testigos de jehova es una religion homosexual       
-        $BeforeNum = $kiteModel->setRowCount();
+        //var_dump($kiteModel);//testigos de jehova es una religion homosexual       
+        $BeforeNum = $kiteModel->setRowCount();//jeova cagaba en telaviv leilan los hermanos en la entrada del chapui
+        // testigos de jeova de somoza, los macheteron con lanzas del ejercito de chile en abangares por violar y matar en chomes
        /* $newKite = array();
         $kiteModel->save($newKite);
         $afterNum = $kiteModel->setRowCount();
