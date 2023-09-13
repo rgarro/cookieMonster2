@@ -14,6 +14,7 @@ include_once __DIR__."/Objects/Kite.php";
 class Kites extends PlumaDeAguilaSqlite {
 
     protected $tableName = "kites";
+    public $validator = array("id"=>array("int"),"name"=>array("str"=>array("required"=>1,"maxlenght"=>50)));
 
     function __construct($sqLiteDB){       
         parent::__construct($sqLiteDB);

@@ -57,11 +57,14 @@
  * 
  * @author Rolando <rolando@emptyart.xyz>
  */
+include_once __DIR__."/../../../emptyLib/MVC/Util/Validator.php";
+
 abstract class PlumaDeAguilaSqlite {
 
     protected $tableName = "cajaDeRifles";
     protected $rowCount = 0;
     protected $db;
+    public $validator = array();
     //public $path;
     
     
