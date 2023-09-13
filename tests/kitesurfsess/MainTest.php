@@ -90,8 +90,8 @@ final class MainTest extends TestCase{
     }
 
     /**Begin Users Assertion */
-/*
-    public function testUsersModelExist(){
+
+    /*public function testUsersModelExist(){
         $userModel = new Users($this->SqLiteDB);
         $this->assertTrue(get_class($userModel)=="Users");
     }
@@ -99,7 +99,7 @@ final class MainTest extends TestCase{
     public function testUsersModelExtendsPlumaDeAguilaSqliteParentModel(){
         $userModel = new Users($this->SqLiteDB);
         $this->assertTrue(is_subclass_of($userModel)=="PlumaDeAguilaSqlite");
-    }
-*/
+    }*/
+
     /**End Users Assertions */
 }
