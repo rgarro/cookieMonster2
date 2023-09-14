@@ -65,6 +65,7 @@ abstract class PlumaDeAguilaSqlite {
     protected $rowCount = 0;
     protected $db;
     public $validator = array();
+    protected $validation_errors = array();
     //public $path;
     
     
@@ -118,6 +119,9 @@ abstract class PlumaDeAguilaSqlite {
     public function save($fields){
         $val = new Validator();
         $fi = $val->validationBow($fields);
+        if($fi->has_errors){
+            $this->validation_errors = $fi->errors;
+        }
         return $fi;
     }
 
