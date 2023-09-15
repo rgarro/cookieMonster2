@@ -39,6 +39,8 @@ final class Validator {
 
    
     public function validationBow($fields){
+ print_r($fields); 
+ exit;      
         if($this->fieldIndex < count($fields)){
             $currentField = $fields[$this->fieldIndex];
             $err = array();
