@@ -37,10 +37,7 @@ final class Validator {
 
     }
 
-    /**
-     * my Slingshot Turbine will fly along the Boca Barranca breaking wave ....
-     * looking for a sponsor for my North surfboard
-     */
+   
     public function validationBow($fields){
         if($this->fieldIndex < count($fields)){
             $currentField = $fields[$this->fieldIndex];
