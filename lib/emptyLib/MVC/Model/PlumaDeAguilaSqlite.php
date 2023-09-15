@@ -26,32 +26,8 @@
  *   \,|,,/         |   |   / ( *      X|   |  ====      \
  *,,;,,|            |   |  /   )       X|     /- \\|      
  *  \  /,,;,, /^|   |   |\/___( )___O___|o /o }  (@)______
- * ,,\|__/  <(- /   |||||    /=/\=\       / \ `/  ()
- *           / |     |||    /((__))\   []/|  \/   ()
- *         \(__,\    (|)  _/_) *(* _\_    /       /|\
- *                       ( )_)(_))(_)_) _/         |
- *                        Ż _________  (__\________/
- *               \|/        |)\{'}/(|            __
- *                          |\     /|            )(
- * \|/                      |-|   |-|       _   /XX\    __
- *      .-'- .              |/ ___ \|\      )( (____)___ - 
- *  ,;;'       ' . - ' ';,  |)/___\(| \    (__) -__- ~~~~~
- * ~;);'               ;;;~      \|/         __-__~~~~~~~~
- * )(;; '    )     (   ;);;,    \|| |/    -___-~~~~~~~ ~~~
- *;;;); /  '  - - - \  (;;),;~   ||/ __ _(_)-~~~~~~~~ ~~~~
- *~;;`;/  '          \ ;);;;;,   \||(__)~~~ ~~~~~~~~~ ~~~~
- *(~;;/ .'            \';(;;>;>  __--~~~~~~~~ ~~~____~~~~
- *\||/.       /    __  \\ \ -;; -~~~~~~~ ~~~ ~ _/    \___/
- * |||/     \||  _(__) _\\ \ _|~~~~~~~ ~~~~~~/      /
- *\||/    .:|||.(_____)_)~~ (_)~~~ ~~~~~~~__~/_~~~ ~|__~~~
- * \||_ -- _|||_ ~~~~ ~~~~~ ~~ ~~~~~ ~~~~/    \~~~~~~~
- *- ~~ ~~~ ~~~~ ~~~~ ~~~~ ~~~~  ~~~~~~~~(~~~~~~|~~~~ ~~~~
- *~~ ~~ ~~ ~~~ ~~~~ ~~~~ ~~~ ~~~ ~~~~~~~ ~~~~~~~~~~~~~~~~
  *
  * Comanche !! Comanche  !!  Comanche  !! 
- * We were selling Black rifles in the Fort Walton outskirts
- * the 13 rapists from Pesacola get hanged at noon
- * they all were jahova witness
  *
  * 
  * 
@@ -74,14 +50,6 @@ abstract class PlumaDeAguilaSqlite {
             //$this->path = $dbo;
             $this->setDB($dbo);
             if($this->checkIfTableExist()){
-                //Jah Jah live! Children yeah ,Dirlewanger the real Bob Marley Had a Macbook powerPc in 1945
-                //surfers like bob marley, cantabrian sailors train surf before becoming cornwaleses since the times of rome
-                //Jah Jah live sounds like german ....
-                //A t-26 with spanish flag , red gold and green
-                //Dirlewanger shoot the sheriff and stab all the deputies
-                //Waiting in Vain is a song about military police shooting female desertors
-                //Yo me cago en el dios de los testigos de jehova, que son la mierda de este mundo  ..
-                //Dirlewanger and some of his fellows worked for the us army in the vietnam war..
                 $this->rowCount = $this->setRowCount();
             }else{
                 throw new Exception($this->tableName.' La FARC degollo a Andrea ....');
