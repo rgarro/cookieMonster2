@@ -1,29 +1,28 @@
 <?php
 /**
- *                   _------__--___.__.
- *                 /            `  `    \
- *                |                      \
- *                |                       |
- *                 \                      |
- *                   ~/ --`-`-`-\         |
- *                   |            |       |
- *                   |            |       |
- *                    |   _--    |       |
- * Hey Butthead,      _| =-.    |.-.    |
- *                    o|/o/       _.   |
- *does this suck?     /  ~          \ |
- *                  (____@)  ___~    |
- *                     |_===~~~.`    |
- *                  _______.--~     |
- *                  \________       |
- *                           \      |
- *                         __/-___-- -__
- *                        /            __\
- *                       /-| Metallica|| |
- *                      / /|          || |
- * too high to wonder why I touched $this->place
- * an iphone recalled your voice
- * 
+ *                   ___..................____
+ *           _..--''~_______   _____...----~~~\\
+ *       __.'    .-'~       \\~      [_`.7     \\
+ * .---~~      .'            \\           __..--\\_
+ * /             `-._          \\   _...~~~_..---~  ~~~~~~~~~~~~--.._
+ * \              /  ~~~~~~----_\`-~_-~~__          ~~~~~~~---.._    ~--.__
+ * \     _       |==            |   ~--___--------...__          `-   _.--"""|
+ *  \ __/.-._\   |              |            ~~~~--.  `-._ ___...--~~~_.'|_Y |
+ *   `--'|/~_\\  |              |     _____           _.~~~__..--~~_.-~~~.-~/
+ *     | ||| |\\_|__            |.../.----.._.        | Y |__...--~~_.-~  _/
+ *      ~\\\ || ~|..__---____   |||||  .'~-. \\       |_..-----~~~~   _.~~
+ *        \`-'/ /     ~~~----...|'''|  |/"_"\ \\   |~~'           __.~
+ *         `~~~'                 ~~-:  ||| ~| |\\  |        __..~~
+ *                                   ~~|||  | | \\/  _.---~~
+ *                                     \\\  //  | ~~~
+ *                                      \`-'/  / dp
+ *                                       `~~~~'
+ * STAND BY
+ *  Validator Radio Station in Honor of the Last American Hero
+ *  And in your waiting hands, I will land
+ * And roll out of my skin
+ * And in your final hours, I will stand
+ * Ready to begin
  * 
  * @author Rolando<rolando@emptyart.xyz>
  */
@@ -37,11 +36,12 @@ final class Validator {
 
     }
 
-   
-    public function validationBow($fields){
+   //to whom speed means freedom of the soul ...
+    public function validationBow($fields,$validations){
  print_r($fields); 
+ print_r($validations);
  exit;      
-        if($this->fieldIndex < count($fields)){
+        if($this->fieldIndex < count($fields)){//show me how to live ...
             $currentField = $fields[$this->fieldIndex];
             $err = array();
             switch ($currentField['validator']) {
@@ -64,7 +64,7 @@ final class Validator {
             $fields[$this->fieldIndex]['error'] = $err;
             //$fields['has_errors'] = true;
             $this->fieldIndex ++;//Sad Hill cementery 
-            $this->validationBow($fields);
+            $this->validationBow($fields,$validations);//ready to begin .. 
         }else{
             return $fields;
         }

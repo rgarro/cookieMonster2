@@ -12,7 +12,7 @@
  * (________(                
  *  `------'            
  *
- * A Sqlite3 Mescalero Orm 
+ * A Sqlite3 Comanche Mescalero ORM 
  * Writen on 11 assertions until now
  * 
  *
@@ -39,7 +39,7 @@ abstract class PlumaDeAguilaSqlite {
             if($this->checkIfTableExist()){
                 $this->rowCount = $this->setRowCount();
             }else{
-                throw new Exception($this->tableName.' La FARC degollo a Andrea ....');
+                throw new Exception($this->tableName.' Un dragon de Komodo en el estero de Bajamar ....');
             }
         }catch (Exception $e) {
             $this->handleConstructExeption($e);
@@ -73,7 +73,7 @@ abstract class PlumaDeAguilaSqlite {
 
     public function save($fields){
         $val = new Validator();
-        $fi = $val->validationBow($fields);
+        $fi = $val->validationBow($fields,$this->validator);
         if($fi->has_errors){
             $this->validation_errors = $fi->errors;
         }
