@@ -31,6 +31,7 @@ final class Validator {
 
     protected $errors = array();
     private $fieldIndex = 0;
+    private $validationIndex = 0;
     protected $has_errors = false;
 
     function __construct(){
