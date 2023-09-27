@@ -32,6 +32,7 @@ final class Validator {
     protected $errors = array();
     private $fieldIndex = 0;
     private $validationIndex = 0;
+    private $currentTopValidation = 0;
     protected $has_errors = false;
 
     function __construct(){
@@ -41,10 +42,14 @@ final class Validator {
    //to whom speed means freedom of the soul ...
     public function validationBow($fields,$validations){
  print_r($fields); 
- print_r($validations);
- exit;      
+ //print_r($validations);
+ //exit;      
         if($this->fieldIndex < count($fields)){//show me how to live ...
             $currentField = $fields[$this->fieldIndex];
+ echo "asdfasdfadf";
+            print_r($currentField); 
+ echo "asdfasdfadf";
+ exit;          
             $err = array();
             switch ($currentField['validator']) {
                 case "str":
@@ -70,6 +75,10 @@ final class Validator {
         }else{
             return $fields;
         }
+    }
+
+    private function setCurrentValidator(){
+
     }
 
     private function defaultValidation(){
