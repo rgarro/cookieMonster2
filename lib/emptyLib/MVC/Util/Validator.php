@@ -18,7 +18,8 @@
  *                                      \`-'/  / dp
  *                                       `~~~~'
  * STAND BY
- *  Validator Radio Station in Honor of the Last American Hero
+ *  this. Radio Station was named Validator in Honor of the Last American Hero
+ * to whom speed means freedom of the soul
  *  And in your waiting hands, I will land
  * And roll out of my skin
  * And in your final hours, I will stand
