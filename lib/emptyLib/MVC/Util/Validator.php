@@ -34,6 +34,7 @@ final class Validator {
     private $validationIndex = 0;
     private $currentTopValidation = 0;
     protected $has_errors = false;
+    protected $keysAreSet = false;
 
     function __construct(){
 
@@ -41,6 +42,9 @@ final class Validator {
 
    //to whom speed means freedom of the soul ...
     public function validationBow($fields,$validations){
+        if(!$this->keysAreSet){
+            $fields = array_fill_keys($fields);
+        }
  print_r($fields); 
  //print_r($validations);
  //exit;      
