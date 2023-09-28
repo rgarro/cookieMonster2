@@ -42,12 +42,11 @@ final class Validator {
 
    //to whom speed means freedom of the soul ...
     public function validationBow($fields,$validations){
-        if(!$this->keysAreSet){
-            $fields = array_fill_keys($fields);
-        }
+            $currentField = array_shift($fields);//shifting gears ..
+ print_r($currentField);       
  print_r($fields); 
  //print_r($validations);
- //exit;      
+ exit;      
         if($this->fieldIndex < count($fields)){//show me how to live ...
             $currentField = $fields[$this->fieldIndex];
  echo "asdfasdfadf";
