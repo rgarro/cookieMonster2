@@ -67,13 +67,9 @@ final class Validator {
 
     private function doFieldValidation($current_field,$current_key,$validations){
         if($this->validationIndex < count($validations)){
-
-            $this->validationIndex ++;
-            $this->doFieldValidation($current_field,$current_key,$validations);
-        }else{
-            $this->validationIndex = 0;
-        }
-        /*switch ($currentField['validator']) {
+print_r($validations);
+exit;
+            /*switch ($currentField['validator']) {
                 case "str":
                     $err = $this->checkIfString($currentField['value'],$minlenght=10,$maxlenght=100);
                     break;
@@ -90,6 +86,11 @@ final class Validator {
                     $this->defaultValidation();
                
             }*/
+            $this->validationIndex ++;
+            $this->doFieldValidation($current_field,$current_key,$validations);
+        }else{
+            $this->validationIndex = 0;
+        }        
             return array();
     }
 
