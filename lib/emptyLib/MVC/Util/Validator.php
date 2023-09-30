@@ -35,6 +35,7 @@ final class Validator {
     private $currentTopValidation = 0;
     protected $has_errors = false;
     protected $keysAreSet = false;
+    protected $fieldsKeys = array();
 
     function __construct(){
 
@@ -42,9 +43,23 @@ final class Validator {
 
    //to whom speed means freedom of the soul ...
     public function validationBow($fields,$validations){
-            $currentField = array_shift($fields);//shifting gears ..
- print_r($currentField);       
+        if(!$this->keysAreSet){
+            $this->fieldsKeys = array_keys($fields);
+            $this->keysAreSet = true;
+        }
+ 
+echo "qqq";
+ print_r($this->fieldsKeys);
+echo "aaaa";       
+print_r($fields);
+echo "ss";    
+            $currentField = current($fields);//pushing clutch pedals ...
+            $t = array_shift($fields);//shifting gears ....
+echo "weeee"; 
+print_r($currentField);
+echo "gggg";       
  print_r($fields); 
+ echo "weee";
  //print_r($validations);
  exit;      
         if($this->fieldIndex < count($fields)){//show me how to live ...
