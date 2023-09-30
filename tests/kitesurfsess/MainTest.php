@@ -62,6 +62,10 @@ final class MainTest extends TestCase{
         $this->assertTrue(method_exists($kiteModel,'setRowCount'));
     }
 
+    public function testSaveAKiteWithInvalidDataReturnsError(){
+        
+    }
+
     public function testSaveAKiteIncrementsKitesTableCount(){
         $this->SqLiteDB = new BayouFalconNest($this->dbpath);
         $kiteModel = new Kites($this->SqLiteDB);     

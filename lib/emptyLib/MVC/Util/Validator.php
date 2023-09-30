@@ -20,10 +20,8 @@
  * STAND BY
  *  this. Radio Station was named Validator in Honor of the Last American Hero
  * to whom speed means freedom of the soul
- *  And in your waiting hands, I will land
- * And roll out of my skin
- * And in your final hours, I will stand
- * Ready to begin
+ * Validator is recursive on two arrows, the fieldsNames iterating the data the validation 
+ * Assertions made to design this  1 ...
  * 
  * @author Rolando<rolando@emptyart.xyz>
  */
@@ -31,6 +29,7 @@ final class Validator {
 
     protected $errors = array();
     private $fieldIndex = 0;
+    private $keysIndex = 0;
     private $validationIndex = 0;
     private $currentTopValidation = 0;
     protected $has_errors = false;
@@ -44,32 +43,37 @@ final class Validator {
    //to whom speed means freedom of the soul ...
     public function validationBow($fields,$validations){
         if(!$this->keysAreSet){
-            $this->fieldsKeys = array_keys($fields);
-            $this->keysAreSet = true;
+           $this->setFieldsKeys($fields);
         }
- 
-echo "qqq";
- print_r($this->fieldsKeys);
-echo "aaaa";       
-print_r($fields);
-echo "ss";    
-            $currentField = current($fields);//pushing clutch pedals ...
-            $t = array_shift($fields);//shifting gears ....
-echo "weeee"; 
-print_r($currentField);
-echo "gggg";       
- print_r($fields); 
- echo "weee";
- //print_r($validations);
- exit;      
-        if($this->fieldIndex < count($fields)){//show me how to live ...
-            $currentField = $fields[$this->fieldIndex];
- echo "asdfasdfadf";
+        if($this->keysIndex < count($fields)){//show me how to live ...
+            $currentField = $fields[$this->fieldsKeys[$this->fieldIndex]];
+ echo "asdfasdfadf>";
             print_r($currentField); 
- echo "asdfasdfadf";
+ echo "<asdfasdfadf";
  exit;          
             $err = array();
-            switch ($currentField['validator']) {
+            $err = $this->doFieldValidation($currentField,$this->fieldsKeys[$this->fieldIndex],$validations);
+            if(count($err)){
+                $e = array("error"=>$err);
+                array_push($e,$fields[$this->fieldsKeys[$this->fieldIndex]]);//['error'] = $err;
+            //$fields['has_errors'] = true;
+            }
+            $this->keysIndex ++;//Sad Hill cementery 
+            $this->validationBow($fields,$validations);//ready to begin .. 
+        }else{
+            return $fields;
+        }
+    }
+
+    private function doFieldValidation($current_field,$current_key,$validations){
+        if($this->validationIndex < count($validations)){
+
+            $this->validationIndex ++;
+            $this->doFieldValidation($current_field,$current_key,$validations);
+        }else{
+            $this->validationIndex = 0;
+        }
+        /*switch ($currentField['validator']) {
                 case "str":
                     $err = $this->checkIfString($currentField['value'],$minlenght=10,$maxlenght=100);
                     break;
@@ -85,14 +89,13 @@ echo "gggg";
                 default:
                     $this->defaultValidation();
                
-            }
-            $fields[$this->fieldIndex]['error'] = $err;
-            //$fields['has_errors'] = true;
-            $this->fieldIndex ++;//Sad Hill cementery 
-            $this->validationBow($fields,$validations);//ready to begin .. 
-        }else{
-            return $fields;
-        }
+            }*/
+            return array();
+    }
+
+    private function setFieldsKeys($fieldsArray){
+         $this->fieldsKeys = array_keys($fieldsArray);
+            $this->keysAreSet = true;
     }
 
     private function setCurrentValidator(){
