@@ -63,7 +63,10 @@ final class MainTest extends TestCase{
     }
 
     public function testSaveAKiteWithInvalidDataReturnsError(){
-        
+        $this->SqLiteDB = new BayouFalconNest($this->dbpath);
+        $kiteModel = new Kites($this->SqLiteDB);
+        $newKite = array("name"=>"test duotone","area"=>9);
+        $kiteModel->save($newKite);
     }
 
     public function testSaveAKiteIncrementsKitesTableCount(){
